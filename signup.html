@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h2>SIGN UP</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username">Enter your Fullname</label>
+                    <input type="username" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="number">Enter Phone Number</label>
+                    <input type="number" id="number" name="number" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">SIGN UP</button>
+                <div class="social-login">
+                    <p>OR</p>
+                    <div class="social-icons">
+                        <button class="social-btn google">G</button>
+                        <button class="social-btn facebook">f</button>
+                    </div>
+                </div>
+                <p class="already-user">Already a user? <a href="login.html">LOGIN</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

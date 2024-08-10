@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.856);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    background-image:url("hss.jpeg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px;
+    margin:0;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(196, 7, 7, 0.5);
+}
+
+.container h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container p {
+    color: #fff;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+    border-radius: 8px;
+}
+
+section {
+    text-align: left;
+}
+
+.heading h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.textarea p {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul.saftytalk {
+    color: rgb(12, 55, 247);
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0; /* Remove default padding */
+    width: 100%; /* Ensure it takes the full width of the container */
+    box-sizing: border-box;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-box {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-box:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-text {
+    color: rgb(221, 7, 7);
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .button-text {
+        font-size: 16px;
+    }
+
+    ul.saftytalk {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    .textarea p {
+        font-size: 14px;
+    }
+
+    .button-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .button-text {
+        font-size: 12px;
+    }
+}
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-content > div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-content h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    border-bottom: 2px solid #9c1414;
+    padding-bottom: 10px;
+}
+
+.footer-content p {
+    color: #1059f5;
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    color: #f11111;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.twitter {
+    background-color: #1da1f2;
+}
+
+.social-icon.instagram {
+    background-color: #e4405f;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    font-size: 0.8em;
+}

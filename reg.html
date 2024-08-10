@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+        <section>
+            <form id="registrationForm" action="/submit-form" method="post" enctype="multipart/form-data">
+                <label for="image">Profile Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="place">Address:</label>
+                <input type="text" id="place" name="place" required>
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+                <!-- Voice Recording Section -->
+                <label for="voiceMessage">Record Your Voice Message:</label>
+                <button type="button" id="startRecording">Start Recording</button>
+                <button type="button" id="stopRecording">Stop Recording</button>
+
+              
+                <input type="hidden" id="voiceMessage" name="voiceMessage">
+
+                <!-- Text Message Section -->
+                <label for="textMessage">Set Your Message1:</label>
+                 <textarea id="textMessage" name="textMessage" rows="2" cols="5" placeholder="Enter your message1"></textarea>
+                <label for=" textMassage" >Set Your Message2:</label>
+                <textarea id="textMassage" name="textMessage" rows="2" cols="4"
+                placeholder=" Enter your message2"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="reg.js"></script>
+    <footer>
+        <p>&copy; 2024 Human Safety Inc.</p>
+    </footer>
+</body>
+</html>

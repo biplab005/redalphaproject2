@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login .css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h2>LOGIN</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username">Enter your Fullname</label>
+                    <input type="username" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me?</label>
+                </div>
+                <button type="submit" class="btn">LOGIN</button>
+                <a href="forgetpass.html" class="forgot-password">Forgot Password?</a>
+                <div class="social-login">
+                    <p>OR</p>
+                    <div class="social-icons">
+                        <button class="social-btn google">G</button>
+                        <button class="social-btn facebook">f</button>
+                       
+                    </div>
+                </div>
+                <p class="need-account">Need an account? <a href="signup.html">SIGN UP</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
